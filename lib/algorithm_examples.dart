@@ -5,7 +5,7 @@ class AlgorithmExamples extends StatelessWidget {
 
   Widget _button(String name,VoidCallback callback){
     return Padding(
-      padding: const EdgeInsets.all(12.0),
+      padding: const EdgeInsets.fromLTRB(24, 24, 24, 0),
       child: MaterialButton(
         color: Colors.black54,
         onPressed: callback,
@@ -21,7 +21,9 @@ class AlgorithmExamples extends StatelessWidget {
       appBar: AppBar(title: Text('Data Structure and Algorithm'),),
       body: ListView(
         children: [
-          _button('Print Duplicate Characters', () {StringQuestions.printDuplicateCharacters("FLUTTER");})
+          _button('Print Duplicate Characters', () {StringQuestions.printDuplicateCharacters("FLUTTER");}),
+          _button('First Non Repeated Character', () {StringQuestions.firstNonRepeatedCharacter("Programming");}),
+          _button('Reverse String Recursively', () {StringQuestions.reverseStringRecursively("This is a simple test");}),
 
         ],
       ),
